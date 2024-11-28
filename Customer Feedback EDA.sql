@@ -27,7 +27,7 @@ SELECT months, avg_nps_score
 FROM `monthsCTE`
 ;
 
--- ACalculating average nps score per month for 2023
+-- Calculating average nps score per month for 2023
 WITH monthsCTE AS(
     SELECT YEAR(`date`) as years, 
             MONTHNAME(date) as months, 
