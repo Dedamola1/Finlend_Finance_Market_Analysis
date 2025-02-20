@@ -17,7 +17,8 @@ ORDER BY total_revenue DESC
 ;
 
 -- Calculating total revenue by product and competitor 
-WITH productCTE AS(
+WITH productCTE AS
+(
         SELECT product,
                 competitor,
                 SUM(competitor_revenue) as total_revenue,
